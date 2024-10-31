@@ -1,41 +1,7 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-import { cardDetails } from "@/constants/CardDetails";
-import CardComponent from "@/components/CardComponent";
+import CategoryBasedProducts from "@/components/CategoryBasedProducts";
 
 const page = () => {
-  const { category } = useParams();
-  const [products, setProducts] = useState(null);
-
-  useEffect(() => {
-    const categoryProducts = cardDetails.filter(
-      (card) => card.category.toUpperCase() === category.toUpperCase()
-    );
-    setProducts(categoryProducts);
-  }, []);
-
-  return (
-    <>
-      <div className="text-2xl font-medium mt-40 w-10/12 mx-auto uppercase">
-        <h1>Category / {category}</h1>
-      </div>
-      <div className="flex gap-8 mt-4 mx-auto w-10/12 ">
-        {products &&
-          products.map((product) => (
-            <CardComponent
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              price={product.price}
-              color={product.color}
-              imageUrl={product.imageUrl}
-              subImage1={product.subImage1}
-            />
-          ))}
-      </div>
-    </>
-  );
+  return <CategoryBasedProducts />;
 };
 
 export default page;
