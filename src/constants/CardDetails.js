@@ -7,9 +7,6 @@ import subImage2OfImage2 from "../../public/EverydaySeamlessCropTank3.jpg"
 import image3 from "../../public/LiftingClubGraphicTShirt.jpg"
 import subImage1OfImage3 from "../../public/LiftingClubGraphicTShirt2.jpg"
 import subImage2OfImage3 from "../../public/LiftingClubGraphicTShirt3.jpg"
-import image4 from "../../public/EverydaySeamlessZipTrackTop.jpg"
-import subImage1OfImage4 from "../../public/EverydaySeamlessZipTrackTop2.jpg"
-import subImage2OfImage4 from "../../public/EverydaySeamlessZipTrackTop3.jpg"
 import image5 from "../../public/PowerHoldallGSBlack.jpg"
 import subImage1OfImage5 from "../../public/PowerHoldallGSBlack2.jpg"
 import subImage2OfImage5 from "../../public/PowerHoldallGSBlack3.jpg"
@@ -53,9 +50,9 @@ export const cardDetails = [
     title:"Everyday Seamless Zip Tracktop",
     color:"Black",
     price:"US$55",
-    imageUrl:image4,
-    subImage1:subImage1OfImage4,
-    subImage2:subImage2OfImage4,
+    imageUrl:"https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessZipTracktopGSBlackB1B7P-BB2J_643f0a46-fe59-4099-a511-75806f63f80c_1920x.jpg?v=1722504959",
+    subImage1:"https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessZipTracktopGSBlackB1B7P-BB2J2_c1211fac-7d30-4952-a5d0-70d63b280c8b_1920x.jpg?v=1722504960",
+    subImage2:"https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessZipTracktopGSBlackB1B7P-BB2J1_2287fb54-45df-42d1-99eb-01aff5c19b9d_1920x.jpg?v=1722504959",
     sizes:["XXS","S","M","L","XL","XXL"],
     category:"Women"
   },
