@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
               "category": "Women",
               "brand": {
                 "@type": "Brand",
-                "name": "Gymshark"
+                "name": "Gymsha"
               },
               "url": "https://next-geeksynergy.vercel.app/product/01",
               "image": [
