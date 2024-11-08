@@ -19,7 +19,10 @@ const SingleProdutDetails = memo(({ id, title, price, sizes }) => {
 
   const handleAddToCart = async (e) => {
     e.preventDefault();
-    !userId && router.push("/sign-in")
+    if(!userId) {
+      router.push("/sign-in")
+      return;
+    }
     
     const productId = id;
     const size = selectedSize;
