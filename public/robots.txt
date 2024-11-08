@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://next-geeksynergy.vercel.app/sitemap.xml
