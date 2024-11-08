@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
                 "price": 65,
                 "priceCurrency": "USD",
                 "priceValidUntil": "2025-03-31",
-                "url": "https://next-geeksynergy.vercel.app/product/01"
+                "url": "product/01"
               }
             })}
           </script>
