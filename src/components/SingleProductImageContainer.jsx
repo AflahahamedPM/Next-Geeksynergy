@@ -1,7 +1,7 @@
-import React from "react";
+import React, {memo} from "react";
 import Image from "next/image";
 
-const SingleProductImageContainer = ({imageUrl, subImage1, subImage2}) => {
+const SingleProductImageContainer = memo(({imageUrl, subImage1, subImage2}) => {
   return (
     <div className="w-1/2">
       <div className="flex gap-2">
@@ -31,6 +31,6 @@ const SingleProductImageContainer = ({imageUrl, subImage1, subImage2}) => {
       </div>
     </div>
   );
-};
+});
 
 export default SingleProductImageContainer;

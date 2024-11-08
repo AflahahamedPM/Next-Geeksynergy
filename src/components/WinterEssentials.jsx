@@ -1,8 +1,8 @@
-import React from "react";
-import { cardDetails } from "@/constants/CardDetails";
+import React, {memo} from "react";
+import { cardDetails } from "../constants/CardDetails";
 import CardComponent from "./CardComponent";
 
-const WinterEssentials = () => {
+const WinterEssentials = memo(() => {
   return (
     <div className="w-10/12 mx-auto">
       <h1 className="uppercase text-2xl font-sans font-bold tracking-wider">
@@ -23,6 +23,6 @@ const WinterEssentials = () => {
       </div>
     </div>
   );
-};
+});
 
 export default WinterEssentials;

@@ -1,7 +1,13 @@
-import CategoryBasedProducts from "@/components/CategoryBasedProducts";
+import CategoryBasedProducts from "../../../components/CategoryBasedProducts";
+import NavComponent from "../../../components/NavComponent";
 
 const page = () => {
-  return <CategoryBasedProducts />;
+  return (
+    <>
+      <NavComponent />
+      <CategoryBasedProducts />;
+    </>
+  )
 };
 
 export default page;

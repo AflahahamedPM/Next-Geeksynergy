@@ -1,7 +1,13 @@
-import SingleProductContainer from "@/components/SingleProductContainer";
+import NavComponent from "../../../components/NavComponent";
+import SingleProductContainer from "../../../components/SingleProductContainer";
 
 const page = () => {
-  return <SingleProductContainer />;
+  return (
+    <>
+      <NavComponent />
+      <SingleProductContainer />
+    </>
+  )
 };
 
 export default page;

@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { useParams } from "next/navigation";
-import { cardDetails } from "@/constants/CardDetails";
-import SingleProdutDetails from "@/components/SingleProdutDetails";
-import SingleProductImageContainer from "@/components/SingleProductImageContainer";
+import { cardDetails } from "../constants/CardDetails";
+import SingleProdutDetails from "../components/SingleProdutDetails";
+import SingleProductImageContainer from "../components/SingleProductImageContainer";
 
-const SingleProductContainer = () => {
+const SingleProductContainer = memo(() => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
   
@@ -24,6 +24,7 @@ const SingleProductContainer = () => {
               subImage2={product.subImage2}
             />
             <SingleProdutDetails
+              id={product.id}
               title={product.title}
               price={product.price}
               sizes={product.sizes}
@@ -32,6 +33,6 @@ const SingleProductContainer = () => {
         )}
       </>
     );
-}
+});
 
 export default SingleProductContainer

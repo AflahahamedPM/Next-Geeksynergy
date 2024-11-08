@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, memo  } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
@@ -9,7 +9,7 @@ import Link from "next/link";
 
 library.add(faHeartRegular, faHeartSolid);
 
-const CardComponent = ({ id, title, price, color, imageUrl, subImage1 }) => {
+const CardComponent = memo(({ id, title, price, color, imageUrl, subImage1 }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -19,7 +19,7 @@ const CardComponent = ({ id, title, price, color, imageUrl, subImage1 }) => {
 
   return (
     <>
-      <div className="w-[300px] h-[300px] shadow-lg text-left">
+      <div className="w-[300px] h-[300px] mb-40 shadow-lg text-left">
         <div
           className="relative"
           onMouseEnter={() => setIsHovered(true)}
@@ -50,10 +50,10 @@ const CardComponent = ({ id, title, price, color, imageUrl, subImage1 }) => {
         <p className="text-xs ml-4 mb-1 font-extralight text-gray-500">
           {color}
         </p>
-        <p className="text-sm ml-4 font-semibold">{price}</p>
+        <p className="text-sm ml-4 font-semibold">US${price}</p>
       </div>
     </>
   );
-};
+});
 
 export default CardComponent;
