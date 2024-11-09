@@ -7,7 +7,7 @@ export default function sitemap() {
         priority: 1,
       },
       {
-        url: 'https://next-geeksynergy.vercel.app/product',
+        url: 'https://next-geeksynergy.vercel.app/product/01',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
