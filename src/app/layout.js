@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import CannonicalLink from "../components/CannonicalLink"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,8 @@ export default function RootLayout({ children }) {
           </script>
           <meta name="google-site-verification" content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk" />
           <meta name="robots" content="index, follow"/>
+          <CannonicalLink />
+
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
