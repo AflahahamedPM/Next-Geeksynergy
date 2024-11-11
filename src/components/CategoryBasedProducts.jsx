@@ -5,7 +5,6 @@ import { cardDetails } from "../constants/CardDetails";
 import CardComponent from "./CardComponent";
 import SearchInput from "./SearchInput";
 import SortComponent from "./SortComponent";
-import Head from "next/head";
 
 const CategoryBasedProducts = memo(() => {
   const { category } = useParams();
@@ -51,12 +50,6 @@ const CategoryBasedProducts = memo(() => {
 
   return (
     <>
-      <Head>
-        <link
-          rel="canonical"
-          href={`https://next-geeksynergy.vercel.app/products/${category}`}
-        />
-      </Head>
       <div className=" flex justify-between font-medium mt-40 w-10/12 mx-auto">
         <h1 className="text-2xl  uppercase">Category / {category}</h1>
         <div className="gap-4 flex items-center">
