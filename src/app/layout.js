@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider dynamic>
       <html lang="en">
-        <Head>
+        <head>
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "http://schema.org",
@@ -53,7 +52,7 @@ export default function RootLayout({ children }) {
           </script>
           <meta name="google-site-verification" content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk" />
           <meta name="robots" content="index, follow"/>
-        </Head>
+        </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
