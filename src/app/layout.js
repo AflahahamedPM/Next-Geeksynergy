@@ -20,9 +20,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = typeof window !== "undefined" ? window.location.pathname : "/";
-
-  const canonicalUrl = `https://next-geeksynergy.vercel.app${pathname}`;
   return (
     <ClerkProvider dynamic>
       <html lang="en">
@@ -56,7 +53,6 @@ export default function RootLayout({ children }) {
           </script>
           <meta name="google-site-verification" content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk" />
           <meta name="robots" content="index, follow"/>
-          <link rel="canonical" href={canonicalUrl} />
         </Head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}

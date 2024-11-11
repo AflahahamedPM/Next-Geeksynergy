@@ -2,10 +2,14 @@ import Image from "next/image";
 import mainImage from "../../public/image.avif";
 import WinterEssentials from "../components/WinterEssentials.jsx"
 import NavComponent from "../components/NavComponent.jsx";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+    <Head>
+    <link rel="canonical" href="https://next-geeksynergy.vercel.app/" />
+    </Head>
     <NavComponent />
       <div className="mt-20 mb-10 relative">
         <Image src={mainImage} className="mt-10" alt="img" />
