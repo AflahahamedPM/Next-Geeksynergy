@@ -5,6 +5,9 @@ import NavComponent from "../components/NavComponent.jsx";
 export default function Home() {
   return (
     <>
+    <head>
+    <link rel="canonical" href="https://next-geeksynergy.vercel.app" />
+    </head>
     <NavComponent />
       <div className="mt-20 mb-10 relative">
         <Image src={mainImage} className="mt-10" alt="img" />
