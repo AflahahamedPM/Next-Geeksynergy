@@ -25,7 +25,7 @@ const CardComponent = memo(({ id, title, price, color, imageUrl, subImage1 }) =>
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <Link href={`/product/${id}`}>
+          <Link href={`/product/${id}/`}>
             <Image
               src={isHovered ? subImage1 : imageUrl}
               alt="popularDestination.img"
