@@ -4,19 +4,27 @@ import { useParams } from "next/navigation";
 import { cardDetails } from "../constants/CardDetails";
 import SingleProdutDetails from "../components/SingleProdutDetails";
 import SingleProductImageContainer from "../components/SingleProductImageContainer";
+import Head from "next/head";
 
 const SingleProductContainer = memo(() => {
-    const { id } = useParams();
-    const [product, setProduct] = useState(null);
-  
-    useEffect(() => {
-      const currentProduct = cardDetails.find((data) => data.id === id);
-      setProduct(currentProduct);
-    }, []);
-  
-    return (
-      <>
-        {product && (
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const currentProduct = cardDetails.find((data) => data.id === id);
+    setProduct(currentProduct);
+  }, []);
+
+  return (
+    <>
+      {product && (
+        <>
+          <Head>
+            <link
+              rel="canonical"
+              href={`https://next-geeksynergy.vercel.app/product/${id}`}
+            />
+          </Head>
           <div className="flex mt-28">
             <SingleProductImageContainer
               imageUrl={product.imageUrl}
@@ -30,9 +38,10 @@ const SingleProductContainer = memo(() => {
               sizes={product.sizes}
             />
           </div>
-        )}
-      </>
-    );
+        </>
+      )}
+    </>
+  );
 });
 
-export default SingleProductContainer
+export default SingleProductContainer;
