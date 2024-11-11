@@ -1,3 +1,2 @@
 User-agent: *
-Disallow:
 Sitemap: https://next-geeksynergy.vercel.app/sitemap.xml

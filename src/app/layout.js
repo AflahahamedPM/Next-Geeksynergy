@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
             })}
           </script>
           <meta name="google-site-verification" content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk" />
+          <meta name="robots" content="index, follow"/>
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
