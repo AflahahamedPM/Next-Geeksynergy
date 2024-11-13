@@ -31,7 +31,7 @@ export default function sitemap() {
         priority: 0.8,
       },
       {
-        url: 'https://next-geeksynergy.vercel.app/product/04',
+        url: 'https://next-geeksynergy.vercel.app/product/05',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
