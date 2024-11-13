@@ -7,7 +7,7 @@ const schemaMarkup = cardDetails.map((product)=>(
       "@type": "Product",
       "name": product.title,
       "description": product.description,
-      "category":"product.category",
+      "category":product.category,
       "brand": {
         "@type": "Brand",
         "name": product.brand
