@@ -11,11 +11,15 @@ import image5 from "../../public/PowerHoldallGSBlack.jpg"
 import subImage1OfImage5 from "../../public/PowerHoldallGSBlack2.jpg"
 import subImage2OfImage5 from "../../public/PowerHoldallGSBlack3.jpg"
 
+
+const brand = "Gymwar"
 export const cardDetails = [
   {
     id:"01",
     title:"Lifting Straight Leg Joggers",
     color:"Light Grey",
+    description:"Well comfortable straight fit joggers for gym",
+    brand: brand,
     price:"65",
     imageUrl:image1,
     subImage1:subImage1OfImage1,
@@ -27,6 +31,8 @@ export const cardDetails = [
     id:"02",
     title:"Everyday Seamless Crop Tank",
     color:"Burgundy",
+    description:"Well comfortable seamless crop tank for gym",
+    brand: brand,
     price:"24",
     imageUrl:image2,
     subImage1:subImage1OfImage2,
@@ -38,6 +44,8 @@ export const cardDetails = [
     id:"03",
     title:"Lifting Club T-Shirt",
     color:"White",
+    description:"Well comfortable lifting club t-shirt for gym",
+    brand: brand,
     price:"55",
     imageUrl:image3,
     subImage1:subImage1OfImage3,
@@ -49,6 +57,8 @@ export const cardDetails = [
     id:"04",
     title:"Everyday Seamless Zip Tracktop",
     color:"Black",
+    description:"Well comfortable seamless zip tracktop for gym",
+    brand: brand,
     price:"55",
     imageUrl:"https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessZipTracktopGSBlackB1B7P-BB2J_643f0a46-fe59-4099-a511-75806f63f80c_1920x.jpg?v=1722504959",
     subImage1:"https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessZipTracktopGSBlackB1B7P-BB2J2_c1211fac-7d30-4952-a5d0-70d63b280c8b_1920x.jpg?v=1722504960",
@@ -60,6 +70,8 @@ export const cardDetails = [
     id:"05",
     title:"Power Holdall",
     color:"Black",
+    description:"Gym bag for all",
+    brand: brand,
     price:"60",
     imageUrl:image5,
     subImage1:subImage1OfImage5,

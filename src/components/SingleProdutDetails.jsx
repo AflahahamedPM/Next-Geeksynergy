@@ -7,7 +7,7 @@ const SingleProdutDetails = memo(({ id, title, price, sizes }) => {
   const [cart, setCart] = useState([]);
   const [sizeErr, setSizeErr] = useState(null);
   const { userId } = useAuth();
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     if (userId) {
@@ -19,11 +19,11 @@ const SingleProdutDetails = memo(({ id, title, price, sizes }) => {
 
   const handleAddToCart = async (e) => {
     e.preventDefault();
-    if(!userId) {
-      router.push("/sign-in")
+    if (!userId) {
+      router.push("/sign-in");
       return;
     }
-    
+
     const productId = id;
     const size = selectedSize;
     if (size === null) {
