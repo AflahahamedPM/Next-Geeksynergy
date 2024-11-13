@@ -8,7 +8,7 @@ const schemaMarkup = cardDetails.map((product) => {
       getImageUrl(product.subImage1),
       getImageUrl(product.subImage2),
     ];
-    
+
   return (
     <script type="application/ld+json" key={product.id}>
       {JSON.stringify({
@@ -29,7 +29,7 @@ const schemaMarkup = cardDetails.map((product) => {
           url: `https://next-geeksynergy.vercel.app/product/${product.id}`,
           priceCurrency: "USD",
           price: product.price,
-          priceValidUntill: "2025-05-31",
+          priceValidUntil: "2025-05-31",
           availability: "https://schema.org/InStock",
         },
       })}
