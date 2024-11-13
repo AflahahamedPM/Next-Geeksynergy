@@ -1,8 +1,7 @@
 import { cardDetails } from "../constants/CardDetails";
+import getImageUrl from "../constants/getImageUrl"
 
 const schemaMarkup = cardDetails.map((product) => {
-    const getImageUrl = (image) => (typeof image === "string" ? image : image.src);
-
     const imageUrls = [
       getImageUrl(product.imageUrl),
       getImageUrl(product.subImage1),
