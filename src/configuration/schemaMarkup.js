@@ -12,7 +12,7 @@ const schemaMarkup = cardDetails.map((product)=>(
         "@type": "Brand",
         "name": product.brand
       },
-      "url":"https://next-geeksynergy.vercel.app/",
+      "url":"https://next-geeksynergy.vercel.app",
       "image":[product.imageUrl, product.subImage1, product.subImage2],
       "offers": {
         "@type": "Offer",
