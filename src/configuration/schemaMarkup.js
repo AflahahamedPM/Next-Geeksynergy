@@ -3,8 +3,7 @@ import getImageUrls from "../constants/getImageUrls"
 
 const schemaMarkup = cardDetails.map((product) => {
     const imageUrls = getImageUrls(product.imageUrl, product.subImage1, product.subImage2);
-
-
+    
   return (
     <script type="application/ld+json" key={product.id}>
       {JSON.stringify({
