@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import CannonicalLink from "../components/CannonicalLink"
-import schemaMarkup from "../configuration/schemaMarkup"
+import CannonicalLink from "../components/CannonicalLink";
+import generateSchemaMarkup from "../configuration/schemaMarkup";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,13 +21,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const schemaData = JSON.stringify(generateSchemaMarkup());
   return (
     <ClerkProvider dynamic>
       <html lang="en">
         <head>
-          {schemaMarkup}
-          <meta name="google-site-verification" content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk" />
-          <meta name="robots" content="index, follow"/>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: schemaData }}
+          />
+          <meta
+            name="google-site-verification"
+            content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk"
+          />
+          <meta name="robots" content="index, follow" />
           <CannonicalLink />
         </head>
         <body
