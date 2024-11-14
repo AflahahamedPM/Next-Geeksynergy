@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           <Script
             id="json-ld-schema"
             type="application/ld+json"
-            strategy="afterInteractive"
+            strategy="beforeInteractive"
           >
             {schemaData}
           </Script>
