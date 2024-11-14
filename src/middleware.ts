@@ -7,7 +7,7 @@ function isCrawler(req) {
   const userAgent = req.headers.get("user-agent") || "";
   console.log("user-agent - ",userAgent);
   
-  const crawlers = ["Googlebot", "Bingbot", "Yahoo! Slurp", "DuckDuckBot", "Baiduspider", "YandexBot", "Sogou"];
+  const crawlers = ["Googlebot", "Bingbot", "Yahoo! Slurp", "DuckDuckBot", "Baiduspider", "YandexBot", "Sogou", "Screaming Frog SEO Spider/20.4"];
   return crawlers.some((crawler) => userAgent.includes(crawler));
 }
 
