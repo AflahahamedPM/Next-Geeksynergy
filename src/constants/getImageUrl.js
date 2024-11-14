@@ -1,4 +1,5 @@
+const getImageUrls = (...images) => {
+  return images.map((image) => (typeof image === "string" ? image : image.src));
+};
 
-const getImageUrl = (image) => typeof image === "string" ? image : image.src;
-
-export default getImageUrl
+export default getImageUrls;

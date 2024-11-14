@@ -2,11 +2,8 @@ import { cardDetails } from "../constants/CardDetails";
 import getImageUrl from "../constants/getImageUrl"
 
 const schemaMarkup = cardDetails.map((product) => {
-    const imageUrls = [
-      getImageUrl(product.imageUrl),
-      getImageUrl(product.subImage1),
-      getImageUrl(product.subImage2),
-    ];
+    const imageUrls = getImageUrls(product.imageUrl, product.subImage1, product.subImage2);
+
 
   return (
     <script type="application/ld+json" key={product.id}>
