@@ -27,13 +27,10 @@ export default function RootLayout({ children }) {
     <ClerkProvider dynamic>
       <html lang="en">
         <head>
-          <Script
-            id="json-ld-schema"
+          <script
             type="application/ld+json"
-            strategy="beforeInteractive"
-          >
-            {schemaData}
-          </Script>
+            dangerouslySetInnerHTML={{ __html: schemaData }}
+          />
           <meta
             name="google-site-verification"
             content="68QqDtrfi3at6FPsShdh8LdW7gr73HV7A9QW6XGDGmk"
